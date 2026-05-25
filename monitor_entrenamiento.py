@@ -149,6 +149,16 @@ def analizar_rendimiento(lista_loss, lista_latencia):
 
 # FUNCIÓN RMSE
 
+"""
+esta función calcula el RMSE
+(Root Mean Squared Error), se comparan 
+valores reales y
+predicciones utilizando operaciones
+matemáticas de la biblioteca math
+como valor absoluto, potencia
+y raíz cuadrada.
+"""
+
 def calcular_rmse():
 
     predicciones = [0.9, 0.8, 0.7, 0.95, 0.85]
@@ -196,6 +206,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
