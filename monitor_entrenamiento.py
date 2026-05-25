@@ -187,6 +187,16 @@ def calcular_rmse():
     print("Epochs estimados:", epochs)
 
 
+"""
+esta función principal controla
+el flujo completo del programa.
+(se encarga de llamar las demás
+funciones necesarias para ejecutar
+la simulación del entrenamiento,
+analizar resultados y calcular
+las métricas finales)
+"""
+
 
 def main():
 
