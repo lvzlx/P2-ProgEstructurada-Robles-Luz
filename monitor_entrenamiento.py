@@ -125,6 +125,16 @@ def simular_metricas_entrenamiento():
 
 # FUNCIÓN DE ANÁLISIS
 
+
+"""
+esta función analiza los resultados
+obtenidos durante el entrenamiento
+(con ayuda de la biblioteca statistics
+se calcula el promedio de pérdida,
+la desviación estándar y la mediana
+de la latencia)
+"""
+
 def analizar_rendimiento(lista_loss, lista_latencia):
 
     print("\nANÁLISIS DE RENDIMIENTO")
@@ -140,6 +150,16 @@ def analizar_rendimiento(lista_loss, lista_latencia):
     print("Mediana de latencia:", round(mediana, 4))
 
 # FUNCIÓN RMSE
+
+"""
+esta función calcula el RMSE
+(Root Mean Squared Error), se comparan 
+valores reales y
+predicciones utilizando operaciones
+matemáticas de la biblioteca math
+como valor absoluto, potencia
+y raíz cuadrada.
+"""
 
 def calcular_rmse():
 
@@ -168,6 +188,16 @@ def calcular_rmse():
     print("RMSE:", round(rmse, 4))
     print("Epochs estimados:", epochs)
 
+
+"""
+esta función principal controla
+el flujo completo del programa.
+(se encarga de llamar las demás
+funciones necesarias para ejecutar
+la simulación del entrenamiento,
+analizar resultados y calcular
+las métricas finales)
+"""
 
 def main():
 
