@@ -218,4 +218,38 @@ def main():
 if __name__ == "__main__":
     main()
 
-    
+
+"""
+1. En datetime.datetime.now(), datetime es la
+clase que pertenece a la biblioteca datetime
+y now() es el método utilizado para obtener
+la fecha y hora actual del sistema.
+"""
+
+"""
+2. Cuando se utiliza import math es necesario
+escribir math.sqrt() para acceder a la función.
+En cambio, con from math import sqrt solo se
+escribe sqrt() directamente.
+"""
+
+"""
+3. Primero la función de simulación genera los
+datos aleatorios del entrenamiento y los guarda
+en listas. Después esos datos son enviados a
+las funciones de análisis y cálculo de RMSE.
+"""
+
+"""
+4. Se utilizaron listas como lista_loss y
+lista_latencia porque permiten almacenar
+múltiples valores relacionados con el
+entrenamiento y recorrerlos fácilmente.
+"""
+
+"""
+5. No fue necesario programar manualmente la
+fórmula de la desviación estándar, ya que
+la biblioteca statistics incluye la función
+stdev() para realizar ese cálculo.
+"""
