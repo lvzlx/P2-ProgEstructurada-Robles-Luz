@@ -124,6 +124,15 @@ def simular_metricas_entrenamiento():
 
 # FUNCIÓN DE ANÁLISIS
 
+"""
+esta función analiza los resultados
+obtenidos durante el entrenamiento
+(con ayuda de la biblioteca statistics
+se calcula el promedio de pérdida,
+la desviación estándar y la mediana
+de la latencia)
+"""
+
 def analizar_rendimiento(lista_loss, lista_latencia):
 
     print("\nANÁLISIS DE RENDIMIENTO")
