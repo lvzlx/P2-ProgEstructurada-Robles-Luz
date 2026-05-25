@@ -43,6 +43,17 @@ def obtener_info_sistema():
 
 # FUNCIÓN DE ENTRENAMIENTO
 
+"""
+esta funcion simula el proceso de
+entrenamiento de un modelo de IA, durante 
+cada epoch se generan valores
+aleatorios de pérdida, probabilidad
+de exito y eventos del entrenamiento (tambien
+utiliza datetime para registrar
+el tiempo de inicio y finalización
+del proceso)
+"""
+
 def simular_metricas_entrenamiento():
 
     lista_loss = []
