@@ -43,18 +43,6 @@ def obtener_info_sistema():
 
 # FUNCIÓN DE ENTRENAMIENTO
 
-
-"""
-esta funcion simula el proceso de
-entrenamiento de un modelo de IA, durante 
-cada epoch se generan valores
-aleatorios de pérdida, probabilidad
-de exito y eventos del entrenamiento (tambien
-utiliza datetime para registrar
-el tiempo de inicio y finalización
-del proceso)
-"""
-
 def simular_metricas_entrenamiento():
 
     lista_loss = []
@@ -125,16 +113,6 @@ def simular_metricas_entrenamiento():
 
 # FUNCIÓN DE ANÁLISIS
 
-
-"""
-esta función analiza los resultados
-obtenidos durante el entrenamiento
-(con ayuda de la biblioteca statistics
-se calcula el promedio de pérdida,
-la desviación estándar y la mediana
-de la latencia)
-"""
-
 def analizar_rendimiento(lista_loss, lista_latencia):
 
     print("\nANÁLISIS DE RENDIMIENTO")
@@ -150,16 +128,6 @@ def analizar_rendimiento(lista_loss, lista_latencia):
     print("Mediana de latencia:", round(mediana, 4))
 
 # FUNCIÓN RMSE
-
-"""
-esta función calcula el RMSE
-(Root Mean Squared Error), se comparan 
-valores reales y
-predicciones utilizando operaciones
-matemáticas de la biblioteca math
-como valor absoluto, potencia
-y raíz cuadrada.
-"""
 
 def calcular_rmse():
 
@@ -189,15 +157,6 @@ def calcular_rmse():
     print("Epochs estimados:", epochs)
 
 
-"""
-esta función principal controla
-el flujo completo del programa.
-(se encarga de llamar las demás
-funciones necesarias para ejecutar
-la simulación del entrenamiento,
-analizar resultados y calcular
-las métricas finales)
-"""
 
 def main():
 
@@ -217,39 +176,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-"""
-1. En datetime.datetime.now(), datetime es la
-clase que pertenece a la biblioteca datetime
-y now() es el método utilizado para obtener
-la fecha y hora actual del sistema.
-"""
-
-"""
-2. Cuando se utiliza import math es necesario
-escribir math.sqrt() para acceder a la función.
-En cambio, con from math import sqrt solo se
-escribe sqrt() directamente.
-"""
-
-"""
-3. Primero la función de simulación genera los
-datos aleatorios del entrenamiento y los guarda
-en listas. Después esos datos son enviados a
-las funciones de análisis y cálculo de RMSE.
-"""
-
-"""
-4. Se utilizaron listas como lista_loss y
-lista_latencia porque permiten almacenar
-múltiples valores relacionados con el
-entrenamiento y recorrerlos fácilmente.
-"""
-
-"""
-5. No fue necesario programar manualmente la
-fórmula de la desviación estándar, ya que
-la biblioteca statistics incluye la función
-stdev() para realizar ese cálculo.
-"""
