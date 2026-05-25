@@ -23,10 +23,10 @@ UMBRAL_ERROR_CRITICO = 0.95
 # FUNCIÓN DE INFORMACIÓN DEL SISTEMA
 
 """
-esta función muestra información básica
+esta funcion muestra informacion basica
 del sistema donde se está ejecutando
 el programa, (utiliza la biblioteca sys 
-para mostrar la plataforma, la versión de Python
+para mostrar la plataforma, la versión de python
 y algunos datos importantes del entorno)
 """
 
@@ -42,6 +42,18 @@ def obtener_info_sistema():
     print("Tamaño máximo entero:", sys.maxsize)
 
 # FUNCIÓN DE ENTRENAMIENTO
+
+
+"""
+esta funcion simula el proceso de
+entrenamiento de un modelo de IA, durante 
+cada epoch se generan valores
+aleatorios de pérdida, probabilidad
+de exito y eventos del entrenamiento (tambien
+utiliza datetime para registrar
+el tiempo de inicio y finalización
+del proceso)
+"""
 
 def simular_metricas_entrenamiento():
 
