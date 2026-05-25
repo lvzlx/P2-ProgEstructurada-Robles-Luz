@@ -22,6 +22,15 @@ UMBRAL_ERROR_CRITICO = 0.95
 
 # FUNCIÓN DE INFORMACIÓN DEL SISTEMA
 
+"""
+esta función muestra información básica
+del sistema donde se está ejecutando
+el programa, (utiliza la biblioteca sys 
+para mostrar la plataforma, la versión de Python
+y algunos datos importantes del entorno)
+"""
+
+
 def obtener_info_sistema():
 
     print("\nINFORMACIÓN DEL SISTEMA")
